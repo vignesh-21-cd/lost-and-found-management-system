@@ -1,0 +1,36 @@
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  width: 30em;
+  height: 30em;
+  background-size: contain;
+}
+
+.item-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21.5em;
+  height: 21.5em;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.item-details:hover {
+  opacity: 1;
+}

@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.8),
+      rgba(200, 200, 200, 0.6)
+    ),
+    url("./lostandfound2.jpg") center/cover no-repeat;
+  color: #333;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Container */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Container Styles */
+.found-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  margin: 5% auto;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideInFromLeft 1s ease-out;
+}
+
+/* Form Styles */
+.found-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-field {
+  padding: 0.75rem;
+  border: 2px solid #ff6f61;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.input-field:focus {
+  border-color: #e64a4a;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.textarea-field {
+  resize: none;
+  height: 100px;
+}
+
+.file-field {
+  border: none;
+}
+
+.submit-button {
+  padding: 0.75rem;
+  background-color: #ff6f61;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  background-color: #e64a4a;
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  animation: pulse 1s infinite;
+}
+
+/* Footer Animations */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15em;
+  margin-top: 2em;
+}
+form {
+  margin-top: em;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
